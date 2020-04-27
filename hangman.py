@@ -82,7 +82,7 @@ def get_available_letters(letters_guessed):
 
 
 def hangman(secret_word):
-    guesses_left = int(input("Welcome to the game Hangman!\nHow many guesses you want:"))
+    guesses_left = int(input("Welcome to the game Hangman!\nHow many guesses you want: "))
     warnings_left = 3
     vovels = "aeiou"
     letters_guessed = []
@@ -165,10 +165,11 @@ def show_possible_matches(my_word):
             if space_counter == 20:
                 print()
                 space_counter = 0
+    print()# extra \n
 
 
 def hangman_with_hints(secret_word):
-    guesses_left = int(input("Welcome to the game Hangman!\nHow many guesses you want:"))
+    guesses_left = int(input("Welcome to the game Hangman!\nHow many guesses you want: "))
     warnings_left = 3
     vovels = "aeiou"
     letters_guessed = []
@@ -180,7 +181,7 @@ def hangman_with_hints(secret_word):
               get_available_letters(letters_guessed), end="")
         guess = str.lower(input("\nPlease guess a letter: "))
         if guess == "*":
-            print("Possible word matches are:")
+            print("Possible word matches are:\n")
             show_possible_matches(get_guessed_word(secret_word, letters_guessed))
         elif guess in letters_guessed:
             if warnings_left > 0:
@@ -224,7 +225,7 @@ def hangman_with_hints(secret_word):
 if __name__ == "__main__":
     secret_word = choose_word(wordlist)
     print("Which version of the game you want to play?\n[1] with hints\n[2] without hints")
-    version = input()
+    version = input("Choose version: ")
 
     if version == "1":
         hangman_with_hints(secret_word)
