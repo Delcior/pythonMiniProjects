@@ -104,13 +104,13 @@ def hangman(secret_word):
                       get_guessed_word(secret_word, letters_guessed))
         elif str.isalpha(guess):
             if guess in secret_word:
+                letters_guessed.append(guess)
                 print("Good guess:", get_guessed_word(secret_word, letters_guessed))
             else:
+                print("Oops! That letter is not in my word:", get_guessed_word(secret_word, letters_guessed))
                 if guess in vovels and guess not in letters_guessed:
-                    print("Oops! That letter is not in my word:", get_guessed_word(secret_word, letters_guessed))
                     guesses_left -= 2
                 else:
-                    print("Oops! That letter is not in my word:", get_guessed_word(secret_word, letters_guessed))
                     guesses_left -= 1
             letters_guessed.append(guess)
         else:
@@ -176,7 +176,7 @@ def hangman_with_hints(secret_word):
           warnings_left, "warnings_left left")
 
     while True:
-        print("\n---------------------\nYou have", guesses_left, "guesses left.\nAvailable letters:",
+        print("---------------------\nYou have", guesses_left, "guesses left.\nAvailable letters:",
               get_available_letters(letters_guessed), end="")
         guess = str.lower(input("\nPlease guess a letter: "))
         if guess == "*":
@@ -227,6 +227,6 @@ if __name__ == "__main__":
     version = input()
 
     if version == "1":
-        hangman(secret_word)
-    else:
         hangman_with_hints(secret_word)
+    else:
+        hangman(secret_word)
