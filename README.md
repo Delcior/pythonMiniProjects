@@ -10,20 +10,20 @@ Menu screen:
 
 Bad guess:
 
-![sign_in](https://github.com/Delcior/FitFreakApp/blob/master/screenshots/first_guess.PNG?raw=true)
+![sign_in](https://github.com/Delcior/pythonMiniProjects/blob/master/screenshots/first_guess.PNG?raw=true)
 
 Good guess:
 
-![good_guess](https://github.com/Delcior/FitFreakApp/blob/master/screenshots/goodGuess.PNG?raw=true)
+![good_guess](https://github.com/Delcior/pythonMiniProjects/blob/master/screenshots/goodGuess.PNG?raw=true)
 
 Hint:
 
-![hint](https://github.com/Delcior/FitFreakApp/blob/master/screenshots/hint.PNG?raw=true)
+![hint](https://github.com/Delcior/pythonMiniProjects/blob/master/screenshots/hint.PNG?raw=true)
 
 Winning:
 
-![win](https://github.com/Delcior/FitFreakApp/blob/master/screenshots/winning.PNG?raw=true)
+![win](https://github.com/Delcior/pythonMiniProjects/blob/master/screenshots/winning.PNG?raw=true)
 
 Loosing:
 
-![loose](https://github.com/Delcior/FitFreakApp/blob/master/screenshots/loosing.PNG?raw=true)
+![loose](https://github.com/Delcior/pythonMiniProjects/blob/master/screenshots/loosing.PNG?raw=true)
